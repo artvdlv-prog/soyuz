@@ -77,17 +77,34 @@ button {
   z-index: 0;
 }
 
-.page-shell::before {
-  background: linear-gradient(180deg, rgba(17,17,17,0.02), transparent 30%);
+.hero-shell::before {
+  /* left-edge white->transparent fade overlay to blend into the white banner */
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 45%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0.0) 50%);
+  pointer-events: none;
+  z-index: 2;
 }
 
-.page-shell::after {
-  background:
-  background-position: 100% 100%; /* align to bottom-right to show buildings */
-    repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0 1px, transparent 1px 28px);
-  mix-blend-mode: overlay;
-  opacity: 0.95;
-  animation: bgShift 14s linear infinite;
+.hero-shell::after {
+  /* right-side image slice */
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 45%;
+  background-image: url('./баннер 1.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 1;
 }
 
 @keyframes bgShift {
