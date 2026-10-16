@@ -83,7 +83,7 @@ button {
 
 .page-shell::after {
   background:
-    linear-gradient(120deg, rgba(18,24,28,0.03), rgba(255,255,255,0.02)),
+  background-position: 100% 100%; /* align to bottom-right to show buildings */
     repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0 1px, transparent 1px 28px);
   mix-blend-mode: overlay;
   opacity: 0.95;
@@ -753,51 +753,49 @@ button {
 }
 
 .project-item {
-  perspective: 1600px;
+  perspective: none; /* disable 3D perspective */
 }
 
 .project-flip {
   position: relative;
-  min-height: 126px;
-  transform-style: preserve-3d;
-  transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+  min-height: auto;
+  transform: none !important; /* prevent flips */
+  transform-style: none;
+  transition: none;
 }
 
 .project-item:hover .project-flip {
-  transform: rotateX(180deg);
+  transform: none !important;
 }
 
 .project-face {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  grid-template-columns: 150px 1.2fr 1fr;
-  gap: 16px;
-  align-items: center;
-  padding: 18px 16px;
-  min-height: 126px;
-  border-top: 1px solid var(--line-soft);
+  position: relative;
+  inset: auto;
+  display: block; /* show front content as normal block */
+  grid-template-columns: none;
+  gap: 0;
+  align-items: stretch;
+  padding: 12px 0;
+  min-height: auto;
+  border-top: none;
   border-bottom: 1px solid var(--line-soft);
-  background: rgba(255,255,255,0.12);
-  backface-visibility: hidden;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  background: transparent;
+  backface-visibility: visible;
+  transition: none;
   box-sizing: border-box;
 }
 
 .project-item:hover .project-face {
-  background: rgba(17,17,17,0.018);
-  border-color: rgba(17,17,17,0.14);
+  background: transparent;
+  border-color: rgba(17,17,17,0.06);
 }
 
 .project-front {
-  z-index: 2;
+  z-index: auto;
 }
 
 .project-back {
-  transform: rotateX(180deg);
-  background: rgba(17,17,17,0.02);
-  border-color: rgba(17,17,17,0.12);
-  z-index: 1;
+  display: none; /* hide flipped preview side */
 }
 
 .project-meta {
