@@ -234,7 +234,7 @@ button {
   inset: 0;
   background-image: url('./баннер 1.png');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 80% center;
   background-size: cover;
   opacity: 0.4;
   pointer-events: none;
