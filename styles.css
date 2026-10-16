@@ -78,16 +78,22 @@ button {
 }
 
 .hero-shell::before {
-  /* left-edge white->transparent fade overlay to blend into the white banner */
+  /* left-edge blur overlay to softly blend the image into the content area;
+     positioned at the left edge of the right-side image slice */
   content: "";
   position: absolute;
   top: 0;
-  right: 45%;
+  left: calc(100% - 45%);
+  width: 8%;
   bottom: 0;
-  left: 0;
-  background: linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0.0) 50%);
   pointer-events: none;
   z-index: 2;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  /* mask so the blur tapers out to the right */
+  mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: rgba(255,255,255,0);
 }
 
 .hero-shell::after {
@@ -100,8 +106,8 @@ button {
   width: 45%;
   background-image: url('./Баннер 1.png');
   background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: cover;
+  background-position: right center;
+  background-size: auto 100%; /* fit image height so buildings are visible */
   opacity: 0.7;
   pointer-events: none;
   z-index: 1;
