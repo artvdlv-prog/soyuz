@@ -109,10 +109,9 @@ button {
   left: 0;
   right: 0;
   z-index: 40;
-  background: rgba(244, 243, 240, 0.8);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(17,17,17,0.04);
-  box-shadow: 0 1px 0 rgba(17,17,17,0.02);
+  background: #ffffff;
+  border-bottom: 1px solid rgba(17,17,17,0.06);
+  box-shadow: 0 6px 24px rgba(12,15,18,0.06);
 }
 
 .header-inner {
