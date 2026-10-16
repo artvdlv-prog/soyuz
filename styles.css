@@ -78,22 +78,17 @@ button {
 }
 
 .hero-shell::before {
-  /* left-edge blur overlay to softly blend the image into the content area;
-     positioned at the left edge of the right-side image slice */
+  /* soft white->transparent gradient at the image's left edge so the
+     photo remains sharp while transitioning smoothly into the page background */
   content: "";
   position: absolute;
   top: 0;
   left: calc(100% - 45%);
-  width: 8%;
+  width: 12%;
   bottom: 0;
   pointer-events: none;
-  z-index: 2;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  /* mask so the blur tapers out to the right */
-  mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-  background: rgba(255,255,255,0);
+  z-index: 3;
+  background: linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0) 100%);
 }
 
 .hero-shell::after {
