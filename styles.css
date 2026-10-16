@@ -98,11 +98,11 @@ button {
   right: 0;
   bottom: 0;
   width: 45%;
-  background-image: url('./баннер 1.png');
+  background-image: url('./Баннер 1.png');
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: cover;
-  opacity: 0.4;
+  opacity: 0.7;
   pointer-events: none;
   z-index: 1;
 }
@@ -246,18 +246,9 @@ button {
   z-index: 2; /* bring hero above page overlays so banner image is visible */
 }
 
-.hero-shell::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url('./баннер 1.png');
-  background-repeat: no-repeat;
-  background-position: 95% 100%; /* align image right and to bottom to show lower part (buildings) */
-  background-size: cover;
-  opacity: 0.4;
-  pointer-events: none;
-  z-index: 1;
-}
+/* NOTE: the left-edge white->transparent fade is defined earlier for ::before.
+   Removed duplicate full-image background here to keep only the right-side
+   slice (::after). */
 
 .hero-copy,
 .hero-visual {
