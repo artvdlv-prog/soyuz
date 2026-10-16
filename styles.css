@@ -30,9 +30,9 @@ body {
   margin: 0;
   font-family: 'Inter', 'Segoe UI', sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(155, 166, 175, 0.24), transparent 26%),
-    radial-gradient(circle at top right, rgba(83, 95, 106, 0.14), transparent 30%),
-    linear-gradient(180deg, #f3f3f1 0%, #ececeb 100%);
+    radial-gradient(circle at 10% 10%, rgba(83, 95, 106, 0.06), transparent 20%),
+    radial-gradient(circle at 90% 20%, rgba(155, 166, 175, 0.04), transparent 25%),
+    linear-gradient(180deg, #f6f8fb 0%, #eef2f6 60%, #e9ecef 100%);
   color: var(--text);
   line-height: 1.6;
   padding-top: 96px;
@@ -79,6 +79,21 @@ button {
 
 .page-shell::before {
   background: linear-gradient(180deg, rgba(17,17,17,0.02), transparent 30%);
+}
+
+.page-shell::after {
+  background:
+    linear-gradient(120deg, rgba(18,24,28,0.03), rgba(255,255,255,0.02)),
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0 1px, transparent 1px 28px);
+  mix-blend-mode: overlay;
+  opacity: 0.95;
+  animation: bgShift 14s linear infinite;
+}
+
+@keyframes bgShift {
+  0% { transform: translateY(0) scale(1); filter: hue-rotate(0deg) saturate(1); }
+  50% { transform: translateY(-3%) scale(1.02); filter: hue-rotate(6deg) saturate(1.04); }
+  100% { transform: translateY(0) scale(1); filter: hue-rotate(0deg) saturate(1); }
 }
 
 .container {
