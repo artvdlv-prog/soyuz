@@ -235,7 +235,7 @@ button {
   inset: 0;
   background-image: url('./баннер 1.png');
   background-repeat: no-repeat;
-  background-position: 80% 80%; /* shift right and down by ~30% from center */
+  background-position: 95% 100%; /* align image right and to bottom to show lower part (buildings) */
   background-size: cover;
   opacity: 0.4;
   pointer-events: none;
@@ -251,9 +251,9 @@ button {
 .hero-copy {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end; /* place text closer to bottom of banner */
   height: 100%;
-  padding: 42px 46px 34px;
+  padding: 20px 46px 28px; /* reduce top padding so text sits nearer bottom */
 }
 
 /* Ensure hero/banner text is solid black for contrast over the background image */
