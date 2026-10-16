@@ -255,6 +255,15 @@ button {
   padding: 42px 46px 34px;
 }
 
+/* Ensure hero/banner text is solid black for contrast over the background image */
+.hero-copy,
+.hero-copy h1,
+.hero-copy .lead,
+.hero-copy p,
+.hero-copy a {
+  color: #000000;
+}
+
 .hero-visual {
   position: relative;
   height: 100%;
