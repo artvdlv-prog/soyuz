@@ -253,7 +253,7 @@ button {
   grid-template-columns: 1fr 1.15fr;
   width: min(100%, 1160px);
   margin: 0 auto;
-  height: 440px;
+  height: 330px;
   align-items: stretch;
   border: 0;
   background: #ffffff;
@@ -1517,7 +1517,7 @@ button {
 /* Additional mobile / tablet optimizations */
 @media (max-width: 1100px) {
   .hero-shell {
-    height: 360px;
+    height: 320px;
     grid-template-columns: 1fr 1fr;
   }
   .hero-shell::after { width: 50%; background-size: auto 100%; }
