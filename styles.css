@@ -251,6 +251,8 @@ button {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1.15fr;
+  width: min(100%, 1160px);
+  margin: 0 auto;
   height: 440px;
   align-items: stretch;
   border: 0;
@@ -441,6 +443,14 @@ button {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
+}
+
+.mini-icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
+  color: #526d61;
 }
 
 .hero-copy h1,
@@ -655,7 +665,9 @@ button {
 }
 
 .flow-index {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 9px;
   color: var(--muted);
   font-size: 0.58rem;
   letter-spacing: 0.1em;
@@ -697,7 +709,7 @@ button {
 
 .service-row {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 44px 1fr;
   gap: 18px;
   align-items: start;
   padding: 18px 0;
@@ -710,11 +722,9 @@ button {
 }
 
 .service-index {
-  font-size: 0.66rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--muted);
-  padding-top: 6px;
+  display: flex;
+  justify-content: center;
+  padding-top: 3px;
 }
 
 .service-body {
@@ -759,13 +769,22 @@ button {
   background: var(--line);
 }
 
-.method-step span {
-  display: inline-block;
+.method-step .method-icon,
+.service-icon,
+.competency-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
   margin-bottom: 16px;
-  font-size: 0.66rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--muted);
+  color: #526d61;
+}
+
+.method-step .mini-icon,
+.service-icon .mini-icon,
+.competency-icon .mini-icon {
+  width: 27px;
+  height: 27px;
 }
 
 .method-step h3 {
@@ -1167,18 +1186,15 @@ button {
 
 .service-detail-head {
   display: grid;
-  grid-template-columns: 64px minmax(0, 1fr);
+  grid-template-columns: 44px minmax(0, 1fr);
   gap: 16px;
   align-items: start;
   margin-bottom: 16px;
 }
 
-.service-detail-head > span,
-.competency-list article > span {
-  padding-top: 5px;
-  color: var(--muted);
-  font-size: 0.72rem;
-  letter-spacing: 0.16em;
+.service-detail-head .service-icon,
+.competency-list article .competency-icon {
+  margin: 0;
 }
 
 .service-detail h2 {
@@ -1230,8 +1246,8 @@ button {
 
 .competency-list article {
   display: grid;
-  grid-template-columns: 64px minmax(0, 1fr);
-  gap: 16px;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 14px;
   padding: 20px 0;
   border-bottom: 1px solid var(--line-soft);
 }

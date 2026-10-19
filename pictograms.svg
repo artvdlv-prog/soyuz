@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <symbol id="engineering" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 5h22v22H5zM11 5v22M21 5v22M5 11h22M5 21h22" />
+    <circle cx="16" cy="16" r="2.2" />
+  </symbol>
+  <symbol id="procurement" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m4 10 12-6 12 6-12 6-12-6ZM4 10v13l12 6 12-6V10M16 16v13M10 7l12 6" />
+  </symbol>
+  <symbol id="construction" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 28V10l11-6 11 6v18M3 28h26M10 14h4v4h-4zM18 14h4v4h-4zM10 21h4v7h-4zM18 21h4v4h-4z" />
+  </symbol>
+  <symbol id="handover" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="16" cy="16" r="12" />
+    <path d="m10 16 4 4 8-9M16 2v3M30 16h-3M16 30v-3M2 16h3" />
+  </symbol>
+  <symbol id="stakeholders" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="16" cy="9" r="4" />
+    <circle cx="7" cy="23" r="3" />
+    <circle cx="25" cy="23" r="3" />
+    <path d="M13 12 9 20M19 12l4 8M10 24h12M16 13v7" />
+  </symbol>
+  <symbol id="project" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7 4h13l5 5v19H7zM20 4v6h5M11 15h10M11 19h7M11 23h5" />
+    <circle cx="22" cy="22" r="4" />
+    <path d="m25 25 3 3" />
+  </symbol>
+  <symbol id="finance" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 27V17h5v10M14 27V11h5v16M23 27V5h5v22M3 27h27" />
+    <circle cx="8" cy="8" r="4" />
+    <path d="M8 6v4M6.5 7h3" />
+  </symbol>
+  <symbol id="control" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="16" cy="16" r="12" />
+    <circle cx="16" cy="16" r="7" />
+    <circle cx="16" cy="16" r="2" />
+    <path d="m22 10 6-6M23 4h5v5" />
+  </symbol>
+  <symbol id="legal" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7 4h13l5 5v19H7zM20 4v6h5M11 15h10M11 19h10M11 23h6" />
+    <circle cx="22" cy="23" r="3" />
+  </symbol>
+  <symbol id="tender" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 6h22l-8 10v8l-6 3V16zM10 10h12M12 14h8" />
+    <circle cx="24" cy="24" r="4" />
+    <path d="m22 24 1.5 1.5L26 23" />
+  </symbol>
+  <symbol id="analysis" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="13" cy="13" r="8" />
+    <path d="m19 19 8 8M9 16v-4M13 16V9M17 16v-2" />
+  </symbol>
+  <symbol id="scope" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M11 5H5v6M21 5h6v6M5 21v6h6M27 21v6h-6M10 16h12" />
+    <circle cx="16" cy="16" r="3" />
+  </symbol>
+  <symbol id="coordination" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="16" cy="16" r="4" />
+    <circle cx="6" cy="6" r="2.5" />
+    <circle cx="26" cy="6" r="2.5" />
+    <circle cx="6" cy="26" r="2.5" />
+    <circle cx="26" cy="26" r="2.5" />
+    <path d="m8 8 5 5M24 8l-5 5M8 24l5-5M24 24l-5-5" />
+  </symbol>
+  <symbol id="reporting" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 27V5M5 27h23M10 22l6-7 5 3 6-9" />
+    <circle cx="10" cy="22" r="1.5" /><circle cx="16" cy="15" r="1.5" /><circle cx="21" cy="18" r="1.5" /><circle cx="27" cy="9" r="1.5" />
+  </symbol>
+  <symbol id="risk" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 4 29 27H3z" />
+    <path d="M16 12v7" />
+    <circle cx="16" cy="23" r="1" />
+  </symbol>
+  <symbol id="audit" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 27h18M8 23v-5h4v5M15 23V9h4v14" />
+    <circle cx="22" cy="12" r="6" />
+    <path d="m26.5 16.5 3 3M20 12h4M22 10v4" />
+  </symbol>
+  <symbol id="security" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 3 27 7v8c0 7-4.5 11-11 14C9.5 26 5 22 5 15V7z" />
+    <path d="m11 16 3.5 3.5L21 13" />
+  </symbol>
+</svg>
